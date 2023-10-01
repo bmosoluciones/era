@@ -19,5 +19,5 @@
 # SOFTWARE.
 
 
-def test_dummy():
+def test_answer():
     from era import app

@@ -1,0 +1,8 @@
+include LICENSE
+include pyproject.toml
+graft era/static
+graft era/migrations
+graft era/templates
+recursive-include era *.unit *.ico *.js *.css *.png *.html *.eot *.svg *.ttf *.woff *.woff2 *.jpg *.py *.txt *.csv *.json *.pdf *.ogg
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

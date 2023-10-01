@@ -1,0 +1,38 @@
+[project]
+name = "era_app"
+description = "Event Registration App."
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [
+  {name = "BMO Soluciones", email = "soluciones.bmo@gmail.com"},
+]
+classifiers = [
+  'Development Status :: 1 - Planning',
+  'Framework :: Flask',
+  'License :: OSI Approved :: MIT License',
+  'Natural Language :: Spanish',
+  'Operating System :: OS Independent',
+  'Programming Language :: Python :: 3 :: Only',
+  'Programming Language :: Python :: 3.8',
+  'Programming Language :: Python :: 3.9',
+  'Programming Language :: Python :: 3.10',
+  'Programming Language :: Python :: 3.11',
+  'Programming Language :: Python :: Implementation :: CPython'
+]
+dynamic = ["version", "dependencies"]
+
+[project.scripts]
+eractl = "era:command"
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.black]
+line-length = 127
+
+[tool.setuptools.packages]
+find = {namespaces = false}

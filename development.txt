@@ -1,0 +1,13 @@
+-r test.txt
+
+# Crear tarball y wheel
+build
+twine
+wheel
+
+# Servidor de desarrollo
+hupper
+
+# Docs
+mkdocs
+mkdocs-material

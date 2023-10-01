@@ -166,3 +166,6 @@ flask_profiler.sql
 
 # Configuration files
 *.conf
+
+# CSS Theme
+era/static/assets/*
